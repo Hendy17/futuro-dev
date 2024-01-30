@@ -77,36 +77,41 @@ body {
 }
 
 /* Call */
-#call {
-  height: 100vh;
+#call {  
   width: 100%;
   background: var(--color-black);
   display: flex;
   color: var(--color-white);
   align-items: center;
+  page-break-before: always; /* Inicia a seção #call em uma nova página */
 }
 
-.call-content {
-  width: 50%;
-  margin: 3rem;
+.call-content { 
+  max-width: 500px; 
+  width: 100%;
+  margin: 3rem;  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .call-content h2 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 31rem;
 }
-
+.call-content p span {
+  font-size: 2.2rem;
+  margin-top: 5rem;S 
+}
 .call-content h2 p {
-  display: inline-block;
+  display: inline-block; 
+  margin-bottom: 45rem; 
 }
 
 .call-content h2 p:nth-child(2) span {
   padding: 3px 5px;
-  border-radius: 4px;
+  border-radius: 5px;
   color: var(--color-black);
   background: var(--color-white);
 }
@@ -117,7 +122,7 @@ body {
 }
 
 .call-content h3 p {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .box-call {
@@ -128,7 +133,7 @@ body {
 
 .box-call h4 {
   margin: 1rem 0.5rem;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .box-call h4 p {
@@ -137,7 +142,7 @@ body {
   padding: 2px 4px;
   border: 2px solid var(--color-blue);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 
@@ -151,7 +156,8 @@ body {
 }
 
 .backgrond-form {
-  width: 50%;
+  max-width: 250xp;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -189,7 +195,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 50%; 
-  padding: 3rem;
+  padding: 6rem;
 }
 
 .sectio-subtitle h1 {
@@ -211,8 +217,8 @@ body {
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  max-width: 700px; /* Ajuste conforme necessário */
-  margin: 0 auto; /* Centraliza o formulário na página */
+  max-width: 700px; 
+  margin: 3; 
 }
 
 .registration-form form {
@@ -220,9 +226,13 @@ body {
   flex-direction: column;
 }
 
+
 .registration-form label {
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 20px;
+  font-size: bold;
+}
+.registration-form label nome {
+  fonte-size: 1.5rem;
 }
 
 .registration-form input,
@@ -259,6 +269,49 @@ body {
 .registration-form button:hover {
   background-color: #45a049; 
 }
+
+
+
+footer {
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px;    
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre os elementos do footer */
+  padding: 1rem 3rem; /* Espaçamento interno do footer */
+}
+
+.contact-info,
+.address-info,
+.other-info,
+.copyright-info {
+  text-align: left;  
+  margin: 2rem;
+}
+
+
+.contact-info h3,
+.address-info h3,
+.other-info h3,
+.copyright-info p {
+  margin-bottom: 10px; 
+  
+}
+
+#contact a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+
+#contact-a:hover {
+  transition: color 0.3s ease;
+  color: var(--color-blue);
+}
+
 
 
 @keyframes written_text {
